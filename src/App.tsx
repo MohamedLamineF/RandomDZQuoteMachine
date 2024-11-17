@@ -1,7 +1,16 @@
 import "./App.css";
 
 function App() {
-  return <h4 className="text-3xl font-bold underline">Hello world!</h4>;
+  return (
+    <>
+      <div id="quote-box">
+        <div id="text"></div>
+        <div id="author"></div>
+        <button id="new-quote">New Quote</button>
+        <a id="tweet-quote">Tweet</a>
+      </div>
+    </>
+  );
 }
 
 export default App;
