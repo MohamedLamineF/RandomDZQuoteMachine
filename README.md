@@ -1,10 +1,10 @@
-# Random Algerian Quote Machine 
+# Random Algerian Quote Machine
 
 Welcome to the **Random Quote Machine** project!
 
 This application generates random Algerian quotes to inspire you and offer insights into Algeria’s culture and values. You can also share your favorite quotes on Twitter or BlueSky with a single click.
 
-This project was created as part of FreeCodeCamp's **"Front End Development Libraries"** certification. For more details, check out the `project-description.md` file.
+This project was created as part of FreeCodeCamp's **"Front End Development Libraries"** certification. For more details, check out the [project-description.md](https://github.com/MohamedLamineF/Random-DZ-Quote-Machine/blob/main/project%20description.md) file.
 
 ---
 
