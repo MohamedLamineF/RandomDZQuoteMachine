@@ -1,0 +1,5 @@
+
+User-agent: *
+Disallow:
+
+Sitemap: https://dz-quotes.netlify.app/sitemap.xml
