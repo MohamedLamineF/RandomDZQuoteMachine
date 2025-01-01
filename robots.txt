@@ -1,5 +1,12 @@
-
+# Allow all web crawlers
 User-agent: *
 Disallow:
 
+# Specify the location of the sitemap
 Sitemap: https://dz-quotes.netlify.app/sitemap.xml
+
+# Add a crawl delay (in seconds)
+Crawl-delay: 10
+
+# Block a specific directory
+Disallow: /private/
