@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build && node generate-sitemap.js",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "prepare": "husky install"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
@@ -29,7 +28,6 @@
     "eslint-plugin-react": "^7.37.3",
     "eslint-plugin-react-hooks": "^5.1.0",
     "globals": "^15.14.0",
-    "husky": "^9.0.0",
     "postcss": "^8.4.49",
     "prettier": "3.4.2",
     "tailwindcss": "^3.4.15",
