@@ -1,8 +1,8 @@
-import React from "react";
-import { QuoteData } from "../types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBluesky } from "@fortawesome/free-brands-svg-icons/faBluesky";
-import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import React from 'react';
+import { QuoteData } from '../types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBluesky } from '@fortawesome/free-brands-svg-icons/faBluesky';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 interface QuoteContainerProps {
   quote: QuoteData;
   isLoading?: boolean;
@@ -35,14 +35,14 @@ const QuoteContainer: React.FC<QuoteContainerProps> = ({
         id="quote-box"
         className="bg-black/50 backdrop-blur-md rounded-xl shadow-2xl p-8 max-w-2xl w-full mx-auto transform hover:scale-[1.02] transition-all duration-500"
         style={{
-          boxShadow: "0 0 40px rgba(0, 0, 0, 0.1)",
+          boxShadow: '0 0 40px rgba(0, 0, 0, 0.1)',
         }}
       >
-        <blockquote dir={language === "ar" ? "rtl" : "ltr"}>
+        <blockquote dir={language === 'ar' ? 'rtl' : 'ltr'}>
           <p
             id="text"
             className={`flex gap-4 text-2xl font-serif leading-relaxed mb-4 transition-all duration-300 text-white ${
-              isLoading ? "opacity-50" : "opacity-100"
+              isLoading ? 'opacity-50' : 'opacity-100'
             }`}
           >
             <span className="text-4xl">"</span> {quote.content}
@@ -51,16 +51,16 @@ const QuoteContainer: React.FC<QuoteContainerProps> = ({
           <footer
             id="author"
             className={`text-lg text-white/80 font-medium transition-all duration-300 ${
-              isLoading ? "opacity-50" : "opacity-100"
-            } ${language === "ar" ? "text-left" : "text-right"}`}
+              isLoading ? 'opacity-50' : 'opacity-100'
+            } ${language === 'ar' ? 'text-left' : 'text-right'}`}
           >
-            ~{quote.author || ""}
+            ~{quote.author || ''}
           </footer>
         </blockquote>
 
         <div
           className={`flex flex-wrap gap-4 justify-between items-center mt-8  ${
-            language === "en" ? "flex-row" : "flex-row-reverse"
+            language === 'en' ? 'flex-row' : 'flex-row-reverse'
           }`}
         >
           <div className="flex items-center gap-2">
@@ -104,9 +104,9 @@ const QuoteContainer: React.FC<QuoteContainerProps> = ({
         <a
           role="button"
           className={`text-white hover:text-white/80 px-4 py-2 ${
-            language === "en" ? "font-bold" : ""
+            language === 'en' ? 'font-bold' : ''
           }`}
-          onClick={() => onChangeLanguage("en")}
+          onClick={() => onChangeLanguage('en')}
         >
           English
         </a>
@@ -114,9 +114,9 @@ const QuoteContainer: React.FC<QuoteContainerProps> = ({
         <a
           role="button"
           className={`text-white hover:text-white/80 px-4 py-2 ${
-            language === "ar" ? "font-bold" : ""
+            language === 'ar' ? 'font-bold' : ''
           }`}
-          onClick={() => onChangeLanguage("ar")}
+          onClick={() => onChangeLanguage('ar')}
         >
           Arabic
         </a>

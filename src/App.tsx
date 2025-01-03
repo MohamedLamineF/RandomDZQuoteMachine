@@ -1,8 +1,8 @@
-import { useState } from "react";
-import "./App.css";
-import QuoteContainer from "./components/QuoteContainer";
-import { GRADIENT_COLORS } from "./types";
-import { useQuotes } from "./hooks/useQuotes";
+import { useState } from 'react';
+import './App.css';
+import QuoteContainer from './components/QuoteContainer';
+import { GRADIENT_COLORS } from './types';
+import { useQuotes } from './hooks/useQuotes';
 
 function App() {
   const { quote, isLoading, fetchNewQuote, language, changeLanguage } =
@@ -10,7 +10,7 @@ function App() {
   const [bgColor, setBgColor] = useState<number>(0);
 
   const handleNewQuote = () => {
-    setBgColor((prev) => (prev + 1) % GRADIENT_COLORS.length);
+    setBgColor(prev => (prev + 1) % GRADIENT_COLORS.length);
     fetchNewQuote();
   };
 
