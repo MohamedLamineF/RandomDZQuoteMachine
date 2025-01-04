@@ -1,142 +1,148 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="./public/quotes.png" alt="Project logo"></a>
+ <img width=128px height=128px src="./public/quotes.png" alt="DZ Random Quote Machine"></a>
 </p>
 
-<h3 align="center">random-quote-machine-fcc</h3>
+<h3 align="center">DZ Random Quote Machine</h3>
 
-<div align="center">
+<div align="center"  style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap; justify-content:center" >
+<div>
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![Platform](https://img.shields.io/badge/platform-reddit-orange.svg)](https://www.reddit.com/user/Wordbook_Bot)
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![Status](https://img.shields.io/badge/status-active-success.svg?style=for-the-badge&color=red)]()
 
+</div>
+
+<div>
+
+![GitHub Issues](https://img.shields.io/github/issues/mohamedLamineF/Random-DZ-Quote-Machine?style=for-the-badge)
+
+</div>
+
+<div>
+
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/MohamedLamineF/Random-DZ-Quote-Machine?style=for-the-badge)
+
+</div>
+
+<div>
+
+![GitHub License](https://img.shields.io/github/license/MohamedLamineF/Random-DZ-Quote-Machine?style=for-the-badge&color=blue)
+
+</div>
 </div>
 
 ---
 
-<p align="center"> 🤖 Few lines describing what your bot does.
-    <br> 
-</p>
+<div align="center" style="border: 2px solid #ccc; border-radius: 8px; padding: 20px; margin: 20px 0;">
+
+This project was created as part of <strong style="color:#ddffee">**FreeCodeCamp's**</strong> **[Front End Development Libraries](https://www.freecodecamp.org/certification/MohamedLamineF/front-end-development-libraries)** certification. For more details, check out the **[project description](project-description.md)** file.
+
+</div>
 
 ## 📝 Table of Contents
 
 - [About](#about)
-- [Demo / Working](#demo)
-- [How it works](#working)
-- [Usage](#usage)
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies Used](#technologies)
 - [Getting Started](#getting_started)
-- [Deploying your own bot](#deployment)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
+- [Project Structure](#structure)
+- [Contributing](#contributing)
+- [Other FCC Projects](#others)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
-## 🧐 About <a name = "about"></a>
+## ℹ️ About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your bot.
+This application generates random Algerian quotes to inspire you and offer insights into Algeria’s culture and values.You can also share your favorite quotes on Twitter or BlueSky with a single click.
 
-## 🎥 Demo / Working <a name = "demo"></a>
+## 🎥 Demo <a name = "demo"></a>
 
-![Working](https://media.giphy.com/media/20NLMBm0BkUOwNljwv/giphy.gif)
+<p align="center">
+  <a href="https://dz-quotes.netlify.app/" rel="noopener">
+ <img  src="./public/Screenshot.png" alt="DZ Random Quote Machine" style="border-radius:10px"></a>
+</p>
 
-## 💭 How it works <a name = "working"></a>
+## ✨ Features <a name = "features"></a>
 
-The bot first extracts the word from the comment and then fetches word definitions, part of speech, example and source from the Oxford Dictionary API.
+- 🎲 Generate random Algerian quotes from a diverse collection.
+- 🔄 Fetch a new quote with the "New Quote" button.
+- 🐦 Share your favorite quotes directly on Twitter.
+- 💙 Share your quotes on BlueSky with the "Skeet" button.
+- 🌐 Multi-language support (Arabic and English).
 
-If the word does not exist in the Oxford Dictionary, the Oxford API then returns a 404 response upon which the bot then tries to fetch results form the Urban Dictionary API.
+## 🛠️ Technologies Used <a name="technologies"></a>
 
-The bot uses the Pushshift API to fetch comments, PRAW module to reply to comments and Heroku as a server.
-
-The entire bot is written in Python 3.6
-
-## 🎈 Usage <a name = "usage"></a>
-
-To use the bot, type:
-
-```
-!dict word
-```
-
-The first part, i.e. "!dict" **is not** case sensitive.
-
-The bot will then give you the Oxford Dictionary (or Urban Dictionary; if the word does not exist in the Oxford Dictionary) definition of the word as a comment reply.
-
-### Example:
-
-> !dict what is love
-
-**Definition:**
-
-Baby, dont hurt me~
-Dont hurt me~ no more.
-
-**Example:**
-
-Dude1: Bruh, what is love?
-Dude2: Baby, dont hurt me, dont hurt me- no more!
-Dude1: dafuq?
-
-**Source:** https://www.urbandictionary.com/define.php?term=what%20is%20love
-
----
-
-<sup>Beep boop. I am a bot. If there are any issues, contact my [Master](https://www.reddit.com/message/compose/?to=PositivePlayer1&subject=/u/Wordbook_Bot)</sup>
-
-<sup>Want to make a similar reddit bot? Check out: [GitHub](https://github.com/kylelobo/Reddit-Bot)</sup>
+- **React v17** (as per FreeCodeCamp requirements)
+- **TypeScript** for static typing
+- **Tailwind CSS** for styling
+- **Vite** for fast development and bundling
+- **ESLint** for code linting and quality control
+- **Prettier** for code formatting
+- **Font Awesome** for icons and symbols
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Follow these steps to get a local copy up and running:
 
-### Prerequisites
+### 1. Prerequisites
 
-What things you need to install the software and how to install them.
+- Node.js (version 12 or higher)
+- npm (usually comes with Node.js)
+- Git
 
-```
-Give examples
-```
+### 2. Clone the Repository
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
+```bash
+git clone git@github.com:MohamedLamineF/Random-DZ-Quote-Machine.git
 ```
 
-And repeat
+### 3. Navigate to the Project Directory
+
+```bash
+cd Random-DZ-Quote-Machine
+```
+
+### 4. Install Dependencies
+
+```bash
+npm install
+```
+
+### 5. Start the Development Server
+
+```bash
+npm run dev
+```
+
+## 🌳 Project Structure <a name="structure"></a>
 
 ```
-until finished
+src/
+├── components/
+│ └── QuoteContainer.tsx
+├── hooks/
+│ └── useQuotes.ts
+|── App.tsx
+|── types.ts
+└── main.tsx
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+## 🛠️ Contributing <a name="contributing"></a>
 
-## 🚀 Deploying your own bot <a name = "deployment"></a>
+We welcome contributions! If you have ideas for improving this project, please feel free to:
 
-To see an example project on how to deploy your bot, please see my own configuration:
+- Open an **issue** to suggest changes or report bugs.
+- Submit a **pull request** with your improvements.
 
-- **Heroku**: https://github.com/kylelobo/Reddit-Bot#deploying_the_bot
+## 🎯 Other FCC Projects <a name="others"></a>
 
-## ⛏️ Built Using <a name = "built_using"></a>
+Check out my other projects from the FreeCodeCamp Frontend Development Libraries certification:
 
-- [PRAW](https://praw.readthedocs.io/en/latest/) - Python Reddit API Wrapper
-- [Heroku](https://www.heroku.com/) - SaaS hosting platform
+- [Markdown Previewer](https://github.com/MohamedLamineF/markdown-previewer-FCC)
+- [Drum Machine](https://github.com/MohamedLamineF/Drum_machine_FCC)
+- [JavaScript Calculator](https://github.com/MohamedLamineF/JavaScriptCalculatorFCC)
+- [25 + 5 Clock](https://github.com/MohamedLamineF/25-5Clock_FCC)
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+Made with ❤️ by [Lamine](https://github.com/MohamedLamineF) 😛
