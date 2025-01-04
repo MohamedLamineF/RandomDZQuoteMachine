@@ -1,87 +1,142 @@
-# Random Algerian Quote Machine
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="./public/quotes.png" alt="Project logo"></a>
+</p>
 
-Welcome to the **Random Quote Machine** project!
+<h3 align="center">random-quote-machine-fcc</h3>
 
-This application generates random Algerian quotes to inspire you and offer insights into Algeria’s culture and values. You can also share your favorite quotes on Twitter or BlueSky with a single click.
+<div align="center">
 
-This project was created as part of FreeCodeCamp's **"Front End Development Libraries"** certification. For more details, check out the [project description](project-description.md) file.
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![Platform](https://img.shields.io/badge/platform-reddit-orange.svg)](https://www.reddit.com/user/Wordbook_Bot)
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
----
-
-## ✨ Features
-
-- 🎲 Generate random Algerian quotes from a diverse collection.
-- 🔄 Fetch a new quote with the "New Quote" button.
-- 🐦 Share your favorite quotes directly on Twitter.
-- 💙 Share your quotes on BlueSky with the "Skeet" button.
-- 🌐 Multi-language support (Arabic and English).
-
----
-
-## 🛠️ Technologies Used
-
-- **React v17** (as per FreeCodeCamp requirements)
-- **TypeScript** for static typing
-- **Tailwind CSS** for styling
-- **Vite** for fast development and bundling
-- **ESLint** for code linting and quality control
+</div>
 
 ---
 
-## 🚀 Getting Started
+<p align="center"> 🤖 Few lines describing what your bot does.
+    <br> 
+</p>
 
-Follow these steps to get a local copy up and running:
+## 📝 Table of Contents
 
-### 1. Clone the Repository
+- [About](#about)
+- [Demo / Working](#demo)
+- [How it works](#working)
+- [Usage](#usage)
+- [Getting Started](#getting_started)
+- [Deploying your own bot](#deployment)
+- [Built Using](#built_using)
+- [TODO](../TODO.md)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
 
-```bash
-git clone git@github.com:MohamedLamineF/Random-DZ-Quote-Machine.git
+## 🧐 About <a name = "about"></a>
+
+Write about 1-2 paragraphs describing the purpose of your bot.
+
+## 🎥 Demo / Working <a name = "demo"></a>
+
+![Working](https://media.giphy.com/media/20NLMBm0BkUOwNljwv/giphy.gif)
+
+## 💭 How it works <a name = "working"></a>
+
+The bot first extracts the word from the comment and then fetches word definitions, part of speech, example and source from the Oxford Dictionary API.
+
+If the word does not exist in the Oxford Dictionary, the Oxford API then returns a 404 response upon which the bot then tries to fetch results form the Urban Dictionary API.
+
+The bot uses the Pushshift API to fetch comments, PRAW module to reply to comments and Heroku as a server.
+
+The entire bot is written in Python 3.6
+
+## 🎈 Usage <a name = "usage"></a>
+
+To use the bot, type:
+
+```
+!dict word
 ```
 
-### 2. Navigate to the Project Directory
+The first part, i.e. "!dict" **is not** case sensitive.
 
-```bash
-cd random-quote-machine
+The bot will then give you the Oxford Dictionary (or Urban Dictionary; if the word does not exist in the Oxford Dictionary) definition of the word as a comment reply.
+
+### Example:
+
+> !dict what is love
+
+**Definition:**
+
+Baby, dont hurt me~
+Dont hurt me~ no more.
+
+**Example:**
+
+Dude1: Bruh, what is love?
+Dude2: Baby, dont hurt me, dont hurt me- no more!
+Dude1: dafuq?
+
+**Source:** https://www.urbandictionary.com/define.php?term=what%20is%20love
+
+---
+
+<sup>Beep boop. I am a bot. If there are any issues, contact my [Master](https://www.reddit.com/message/compose/?to=PositivePlayer1&subject=/u/Wordbook_Bot)</sup>
+
+<sup>Want to make a similar reddit bot? Check out: [GitHub](https://github.com/kylelobo/Reddit-Bot)</sup>
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them.
+
+```
+Give examples
 ```
 
-### 3. Install Dependencies
+### Installing
 
-```bash
-npm install
+A step by step series of examples that tell you how to get a development env running.
+
+Say what the step will be
+
+```
+Give the example
 ```
 
-### 4. Start the Development Server
+And repeat
 
-```bash
-npm run dev
+```
+until finished
 ```
 
----
+End with an example of getting some data out of the system or using it for a little demo.
 
-## 🌍 Demo on Netlify
+## 🚀 Deploying your own bot <a name = "deployment"></a>
 
-Check out the live demo of the project hosted on Netlify:
+To see an example project on how to deploy your bot, please see my own configuration:
 
-[**Random Quote Machine Demo**](https://dz-quotes.netlify.app/)
+- **Heroku**: https://github.com/kylelobo/Reddit-Bot#deploying_the_bot
 
----
+## ⛏️ Built Using <a name = "built_using"></a>
 
-## 🎨 Usage
+- [PRAW](https://praw.readthedocs.io/en/latest/) - Python Reddit API Wrapper
+- [Heroku](https://www.heroku.com/) - SaaS hosting platform
 
-- Open the application in your browser.
-- Click the "New Quote" button to generate a new random quote.
-- Click the "Tweet" button to share the quote on Twitter.
-- Click the "Skeet" button to share the quote on BlueSky.
+## ✍️ Authors <a name = "authors"></a>
 
----
+- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
 
-## 🛠️ Contributing
+See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
-We welcome contributions! If you have ideas for improving this project, please feel free to:
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Open an **issue** to suggest changes or report bugs.
-- Submit a **pull request** with your improvements.
-
----
-
-Made with ❤️ by Lamine 😛
+- Hat tip to anyone whose code was used
+- Inspiration
+- References
