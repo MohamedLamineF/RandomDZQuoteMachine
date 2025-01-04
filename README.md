@@ -50,6 +50,7 @@ This project was created as part of <strong style="color:#ddffee">**FreeCodeCamp
 - [Contributing](#contributing)
 - [Other FCC Projects](#others)
 - [Authors](#authors)
+- [License](#license)
 
 ## ℹ️ About <a name = "about"></a>
 
@@ -57,9 +58,9 @@ This application generates random Algerian quotes to inspire you and offer insig
 
 ## 🎥 Demo <a name = "demo"></a>
 
-<p align="center">
+<p align="center" >
   <a href="https://dz-quotes.netlify.app/" rel="noopener">
- <img  src="./public/Screenshot.png" alt="DZ Random Quote Machine" style="border-radius:10px"></a>
+<img src="./public/Screenshot.png" alt="DZ Random Quote Machine" style="border-radius:5%; margin:10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></a>
 </p>
 
 ## ✨ Features <a name = "features"></a>
@@ -146,3 +147,7 @@ Check out my other projects from the FreeCodeCamp Frontend Development Libraries
 ## ✍️ Authors <a name = "authors"></a>
 
 Made with ❤️ by [Lamine](https://github.com/MohamedLamineF) 😛
+
+# License <a name="license"> </a>
+
+This project is licensed under the MIT License - see the [license](LICENSE) file for details.
